@@ -56,14 +56,14 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "home"
 
 
-  map.forgot    '/forgot', :controller => 'users', :action => 'forgot'
+  map.forgot    '/site/forgot', :controller => 'users', :action => 'forgot'
   map.reset     'reset/:reset_code', :controller => 'users', :action => 'reset'
 
-  map.logout '/logout', :controller => 'sessions', :action => 'destroy'
-  map.login '/login', :controller => 'sessions', :action => 'new'
-  #map.register '/register', :controller => 'users', :action => 'create'
-  map.signup '/assinar', :controller => 'assinar', :action => 'index'
-  map.register '/assinar/cadastro', :controller => 'assinar', :action => 'cadastro'
+  map.logout '/site/logout', :controller => 'sessions', :action => 'destroy'
+  map.login '/site/login', :controller => 'sessions', :action => 'new'
+  #map.register '/site/register', :controller => 'users', :action => 'create'
+  map.signup '/site/assinar', :controller => 'assinar', :action => 'index'
+  map.register '/site/assinar/cadastro', :controller => 'assinar', :action => 'cadastro'
 
   map.resources :users
   map.resource :session
