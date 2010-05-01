@@ -15,11 +15,11 @@ class AssinarController < ApplicationController
 
     if success && @user.errors.empty?
       #self.current_user = @user # !! now logged in
-      #redirect_back_or_default('/')
+      #redirect_back_or_default('/site')
       session[:cadastro] = @user
       #redirect_to :action => 'pagamento'
       self.current_user = @user # !! now logged in
-      redirect_back_or_default('/')
+      redirect_back_or_default('/site')
 
       flash[:notice] = "Você foi cadastrado com sucesso..."
     else
