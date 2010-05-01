@@ -1,0 +1,2 @@
+module AssinarHelper
+end

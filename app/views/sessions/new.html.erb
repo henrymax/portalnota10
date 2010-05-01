@@ -1,0 +1,56 @@
+<ul class="passos">
+	<li class="passo1">
+		<span class="pos">1</span>
+
+		<h3>Saiba <strong>como</strong> <br/><strong>funciona</strong></h3>
+
+		<p>Conheça nossas vantagens e adquira conhecimento.</p>
+		<p><a href="/empresa/como_funciona"><strong>Clique aqui</strong> para saber mais <big><strong>&raquo;</strong></big></a></p>
+	</li>
+	<li class="passo2">
+		<span class="pos">2</span>
+
+		<h3>Área para <br/><strong>assinantes</strong></h3>
+
+                  <script type="text/javascript">
+                  window.onload = function() {
+                          document.forms[0].login.focus();
+                  }
+                  </script>
+
+                  <div class="form">
+
+                    <% if !flash[:error].nil? %> <div class="error"><%= flash[:error] %> </div><% end %>
+
+                    <% form_tag session_path do -%>
+                    <p><%= label_tag 'Usuário' %><br />
+                    <%= text_field_tag 'login', @login %></p>
+
+                    <p><%= label_tag 'Senha' %><br/>
+                    <%= password_field_tag 'password', nil %></p>
+
+                    <!-- Uncomment this if you want this functionality
+                    <p><%= label_tag 'remember_me', 'Remember me' %>
+                    <%= check_box_tag 'remember_me', '1', @remember_me %></p>
+                    -->
+
+                    <p><%= submit_tag 'Entrar' %> | <%= link_to 'Lembrar senha?', :forgot %>  </p>
+                    <% end -%>
+                  </div>
+
+
+	</li>
+	<li class="passo3">
+		<span class="pos">3</span>
+
+		<h3>Escolha o plano<br/><strong>e assine</strong></h3>
+		<p>Conheça nossos planos. Veja nossas vantagens e nossas condições de pagamento.</p>
+
+		<p><%= link_to "<strong>Clique aqui</strong> e saiba mais <big><strong>&raquo;</strong></big>", signup_path %></p>
+	</li>
+</ul>
+
+					<div class="clear"></div>
+
+                                        
+

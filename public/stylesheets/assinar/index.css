@@ -1,0 +1,44 @@
+.passo {
+    margin-bottom: 30px;
+    padding:20px 15px;
+    background: #FEF7E2;
+}
+
+#content .passo h4 {
+    font: bold 16px arial;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+    padding: 0 0 5px;
+    border-bottom: 1px dotted #ddd;
+}
+.passo label span {
+    display:block;
+    width:200px;
+}
+
+.passo label{
+    padding-left:17px;
+    padding-bottom:10px;
+    font-size: 12px;
+}
+
+.passo label b {
+    color:red;
+    font:12px tahoma;
+}
+
+.passo label input,
+.passo label input.input_text,
+.passo label input.input_password,
+.passo label select,
+.passo label textarea {
+    width:205px;
+}
+
+.passo label input#cliente_nascimento_em {
+/*    width:180px;*/
+}
+
+.passo label.novidades span {
+        display:inline;
+}

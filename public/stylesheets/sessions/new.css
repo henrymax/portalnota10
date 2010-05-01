@@ -1,0 +1,88 @@
+.content h3 {
+	margin-bottom:15px;
+	font:22px Arial, Helvetica, sans-serif;
+	line-height:26px;
+	color:#E49312;
+        color:#000;
+}
+
+.content h3 strong {
+	font-size:125%;
+}
+
+
+
+#content .passos {
+	list-style:none;
+	padding:0;
+	margin:80px 0 0  20px;
+}
+
+.passos li {
+	float:left;
+	padding:10px 10px 10px 70px;
+	position:relative;
+	width:210px;
+	_width:290px;
+}
+
+.passos li.passo1,
+.passos li.passo2 {
+	margin-right:25px;
+}
+
+.passos li.passo1 p,
+.passos li.passo3 p{
+	padding-top:0;
+}
+
+.passos li .pos {
+	position:absolute;
+	top:5px;
+	left:0px;
+	font:bold 62px Arial, Helvetica, sans-serif;
+	line-height:62px;
+	background:#EEA32C;
+	color:#fff;
+	display:block;
+	width:55px;
+	text-align:center;
+
+}
+
+
+.form {
+	text-align:left;
+	width:170px;
+	padding:0;
+	margin:0;
+}
+
+.content .form p {
+    padding-bottom: 10px;
+}
+
+
+#content label input.btLogin {
+	display:inline;
+}
+
+.error{
+	font: bold 10px tahoma, Arial, Helvetica, sans-serif;
+	color: #FF3300;
+	padding-bottom:10px;
+}
+
+.link-lembrar-senha {
+	font-size:10px;
+}
+.content .opcoes  {
+	margin-top:0;
+	margin-bottom:0;
+	padding-top:0;
+}
+
+.opcoes li {
+	padding-bottom:15px;
+	font-size:15px ;
+}

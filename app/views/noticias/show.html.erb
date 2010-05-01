@@ -1,0 +1,11 @@
+
+<%= render :partial => "layouts/menu_principal" %>
+
+<div class="principal">
+
+  <span class="data"><%= @noticia.created_at.to_s_br %></span>
+  <h2><%= @noticia.titulo %></h2>
+
+  <div class="conteudo"><%= @noticia.conteudo %></div>
+
+</div>

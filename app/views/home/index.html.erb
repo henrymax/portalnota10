@@ -1,0 +1,35 @@
+
+<%= render :partial => "layouts/menu_principal" %>
+
+<div class="principal">
+  <div id="bannerprincipal"><img src="/images/banner1.jpg"/></div>
+
+  <div class="center">
+    <img src="/images/banner2.jpg" width="553"/>
+
+    <div id="noticias">
+      <h3>Notícias</h3>
+
+      <% @noticias.each do |n| %>
+      <span class="data"><%= n.created_at.to_s_br %></span>
+      <div class="noticia">
+        <h4><%= link_to n.titulo, "/noticias/#{n.id}" %></h4>
+        <p><%= link_to(string_hint(n.resumo, 80), "/noticias/#{n.id}") %></p>
+      </div>
+      <% end %>
+      
+    </div>
+    <div id="colaboradores">
+      <h3>Colaboradores</h3>
+
+      <img src="/images/images/tmp.png"/>
+
+    </div>
+
+  </div>
+  <div id="bannerlateral">
+    <% 4.times do |i| %>
+    <div class="bl"><img src="/images/bl<%= i+1 %>.jpg" /></div>
+    <% end %>
+  </div>
+</div>
