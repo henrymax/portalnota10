@@ -4,7 +4,7 @@
   <div id="bannerprincipal"><img src="/site/images/banner1.jpg"/></div>
 
   <div class="center">
-    <img src="/images/banner2.jpg" width="553"/>
+    <img src="/site/images/banner2.jpg" width="553"/>
 
     <div id="noticias">
       <h3>Notícias</h3>
@@ -12,7 +12,7 @@
       <% @noticias.each do |n| %>
       <span class="data"><%= n.created_at.to_s_br %></span>
       <div class="noticia">
-        <h4><%= link_to n.titulo, "/noticias/#{n.id}" %></h4>
+        <h4><%= link_to n.titulo, "/site/noticias/#{n.id}" %></h4>
         <p><%= link_to(string_hint(n.resumo, 80), "/noticias/#{n.id}") %></p>
       </div>
       <% end %>
