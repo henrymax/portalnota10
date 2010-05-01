@@ -18,7 +18,7 @@
             </div>
 
             <div id="busca">
-              <% form_tag  "/aulas/", :method => :get do |f| %>
+              <% form_tag  "/site/aulas/", :method => :get do |f| %>
                 <input type="text" id="fbusca" name="s" value=""/>
                 <input type="image" src="/site/images/btnbuscar.png" width="35" height="34" id="btnbuscar"/>
               <% end %>
@@ -36,7 +36,7 @@
       <div id="rodape"><div class="wrap">
           <h3>Portal Nota 10</h3>
           Copyright ©. Portal Nota 10. Todos os Direitos Reservados.<br/>
-          <%= link_to "Termos de uso", "/termo_uso" %> - <%= link_to "Quem somos", "/quem-somos" %>
+          <%= link_to "Termos de uso", "/site/termo_uso" %> - <%= link_to "Quem somos", "/site/empresa/quem-somos" %>
       </div></div>
   </div>
 </body>
