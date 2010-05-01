@@ -6,7 +6,7 @@
 body {
     font:12px arial;
     line-height:19px;
-    background: url(/images/bgtopo.png) repeat-x left top;
+    background: url(/site/images/bgtopo.png) repeat-x left top;
 }
 
 
@@ -32,7 +32,7 @@ a img {
 }
 
 #bg {
-    background:url(/images/topo.jpg) no-repeat top center;
+    background:url(/site/images/topo.jpg) no-repeat top center;
 }
 
 #site {
@@ -69,7 +69,7 @@ a img {
    text-indent:-10000px;
    outline: none;
    position: absolute;
-   background: url(/images/btncadastrar.png) no-repeat left top;
+   background: url(/site/images/btncadastrar.png) no-repeat left top;
 }
 .btnentrar {
    display:block;
@@ -80,7 +80,7 @@ a img {
    position: absolute;
 
    left:155px;
-   background: url(/images/btnentrar.png) no-repeat left top;
+   background: url(/site/images/btnentrar.png) no-repeat left top;
 }
 
 .btnlogout {
@@ -89,7 +89,7 @@ a img {
    height:29px;
    text-indent:-10000px;
    outline: none;
-   background: url(/images/btnlogout.png) no-repeat left top;
+   background: url(/site/images/btnlogout.png) no-repeat left top;
 }
 
 .content {
@@ -165,7 +165,7 @@ a img {
 
 .mprincipal li {
     display: block;
-    background: url(/images/menu.png) no-repeat left bottom;
+    background: url(/site/images/menu.png) no-repeat left bottom;
     list-style: none;
 }
 
@@ -193,21 +193,21 @@ a img {
 }
 
 .maux .m1 {
-    background: url(/images/bgmenu1.png) no-repeat left top;
+    background: url(/site/images/bgmenu1.png) no-repeat left top;
 }
 .maux .m2 {
-    background: url(/images/bgmenu2.png) no-repeat left top;
+    background: url(/site/images/bgmenu2.png) no-repeat left top;
 }
 .maux .m3 {
-    background: url(/images/bgmenu3.png) no-repeat left top;
+    background: url(/site/images/bgmenu3.png) no-repeat left top;
 }
 .maux .m4 {
-    background: url(/images/bgmenu4.png) no-repeat left top;
+    background: url(/site/images/bgmenu4.png) no-repeat left top;
 }
 
 
 #rodape {
-    background:#E18700 url(/images/bgrodape-x.png) repeat-x left top;
+    background:#E18700 url(/site/images/bgrodape-x.png) repeat-x left top;
 }
 
 #rodape {
@@ -217,7 +217,7 @@ a img {
 #rodape .wrap {
     width: 950px;
     padding:30px 0;
-    background: url(/images/bgrodape.png) no-repeat left top;
+    background: url(/site/images/bgrodape.png) no-repeat left top;
     text-align: center;
     color:#FFF;
     margin:0 auto;
