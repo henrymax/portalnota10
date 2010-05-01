@@ -1,2 +1,0 @@
-module Admin::CursosHelper
-end

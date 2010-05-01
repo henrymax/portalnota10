@@ -1,2 +1,0 @@
-module Admin::NoticiasHelper
-end

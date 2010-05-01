@@ -1,9 +1,0 @@
-<% if logged_in? -%>
-  <div id="user-bar-greeting">
-    Olá <b><%= current_user.name  %></b>.<br/>
-    Você está conectado como <b><%= link_to_current_user :content_method => :login %></b></div>
-  <div id="user-bar-action"><%= link_to "Desconectar", logout_path, { :title => "Desconectar", :class => "btnlogout" }    %></div>
-<% else -%>
-  <div id="user-bar-action"><%= link_to "Entrar",  login_path,  { :title => "Entrar", :class => "btnentrar" } %>
-                               <%= link_to "Cadastre-se", signup_path, { :title => "Cadatre-se", :class => "btncadastrar" } %></div>
-<% end -%>

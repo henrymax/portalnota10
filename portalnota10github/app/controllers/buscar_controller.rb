@@ -1,5 +1,0 @@
-class BuscarController < ApplicationController
-
-
-
-end
