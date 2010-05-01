@@ -40,7 +40,7 @@
     <% @aulas.each do |aula|  %>
 
     <div class="aula">
-      <h3><%= link_to aula.titulo, "/aulas/#{aula.id}" %></h3>
+      <h3><%= link_to aula.titulo, "/site/aulas/#{aula.id}" %></h3>
       <p><%= string_hint(aula.resumo, 200) %></p>
     </div>
     <% end %>
