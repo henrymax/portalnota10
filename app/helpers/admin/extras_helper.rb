@@ -1,0 +1,2 @@
+module Admin::ExtrasHelper
+end

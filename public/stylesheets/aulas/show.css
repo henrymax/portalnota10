@@ -1,0 +1,114 @@
+.aula {
+    width: 640px;
+    float:left;
+}
+
+.aula h2 {
+    color:#E38B00;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+
+.aula .resumo {
+    background: #f5e6c8;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.aula p {
+    padding: 10px 0 20px;
+}
+
+.aula img {
+    margin: 10px;
+}
+
+
+.complementos {
+    float:left;
+    width: 300px;
+    margin-left: 10px;
+}
+
+.complementos .video {
+    background: #2ECDF9;
+    padding: 10px 8px 8px;
+    margin-bottom: 15px;
+}
+
+.complementos .video h3 {
+    color:#FFF;
+    text-transform: uppercase;
+    margin:0 0 5px;
+    padding:0;
+    font-size: 20px;
+    font-weight:bold;
+}
+
+.complementos .extras {
+    bordeR:1px solid #9E5600;
+    padding:15px 15px;
+    margin-bottom: 15px;
+}
+
+.complementos .extras h3 {
+    color:#9E5600;
+    font-size: 20px;
+    font-weight:bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.complementos .extras  ul { list-style: none; }
+
+.complementos .extras  li {
+    padding: 15px 0 15px 40px;
+    border-top:1px dotted #ddd;
+}
+
+.complementos .extras  li a {
+    font-size: 14px;
+}
+
+
+.complementos .extras .outrosvideos {
+    background: url(/images/ico-video.png) no-repeat left center;
+}
+.complementos .extras .baixar {
+    background: url(/images/ico-pdf.png) no-repeat left center;
+}
+.complementos .extras .exercicio {
+    background: url(/images/ico-pdf.png) no-repeat left center;
+}
+.complementos .extras .ballon {
+    background: url(/images/ico-comentario.png) no-repeat left center;
+}
+
+
+.complementos .relacionados h3 {
+    color:#9E5600;
+    font-size: 20px;
+    font-weight:bold;
+    margin-bottom: 10px;
+    text-transform: uppercase
+}
+
+
+.complementos .relacionados dl {
+    border:1px solid #eee;
+    padding:10px 15px;
+}
+
+.complementos .relacionados dl dt {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.complementos .relacionados dd {
+    font-size:12px;
+    line-height: 18px;
+    letter-spacing: -0.01em;
+}

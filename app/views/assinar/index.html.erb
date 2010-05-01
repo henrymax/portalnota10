@@ -1,0 +1,112 @@
+<%= render :partial => "layouts/menu_principal" %>
+
+<div class="principal">
+    <h2>Assine-já</h2>
+
+
+    <% @user.password = @user.password_confirmation = nil %>
+
+    <%= error_messages_for :user %>
+
+
+
+
+    <% form_for :user, :url => register_path do |f| -%>
+        <div class="passo">
+            <h4>Dados da Conta</h4>
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td>
+                  <label>
+                    <span><b>*</b> Email </span>
+                    <%= f.text_field :email %>
+                  </label>
+                </td>
+                <td>
+                  <label>
+                    <span><b>*</b> Senha  </span>
+                    <%= f.password_field :password %>
+                  </label>
+                </td>
+                <td>
+                  <label>
+                    <span><b>*</b> Confirmar Senha</span>
+                    <%= f.password_field :password_confirmation %>
+                  </label>
+                </td>
+              </tr>
+            </table>
+            <div class="clear"></div>
+        </div>
+
+        <div class="passo">
+            <h4>Dados Pessoais</h4>
+            <table cellpadding="0" cellspacing="0">
+              <tr>
+                <td>
+                  <label>
+                    <span><b>*</b> Nome Completo  </span>
+                    <%= f.text_field :nome %>
+                  </label>
+                </td>
+                <td>
+                  <label>
+                    <span><b>*</b> Como quer ser chamado?</span>
+                    <%= f.text_field :apelido %>
+                  </label>
+                </td>
+                <td>
+
+                  <label STYLE="DISPLAY:NONE">
+                    <span><b>*</b> Data Nascimento</span>
+                    <% # = f.text_field :data_nascimento %>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>
+                    <span><b>*</b> Sexo </span>
+                    <%= f.select :sexo, {"Masculino" => "M", "Feminino" => "F"}, {:include_blank => true} %>
+                  </label>
+                </td>
+                <td>
+                  <label>
+                    <span><b>*</b> CPF</span>
+                    <%= f.text_field :cpf %>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label>
+                    <span><b>*</b> Telefone para Contato 1 </span>
+                    <%= f.text_field :telefone_residencial %>
+                  </label>
+                </td>
+                <td>
+                  <label>
+                    <span>Telefone Celular</span>
+                    <%= f.text_field :telefone_celular %>
+                  </label>
+                </td>
+              </tr>
+
+            </table>
+
+            <div class="clear"></div>
+        </div>
+
+       <div class="passo">
+         <h4>Planos</h4>
+          <p><%= label_tag 'Planos' %><br/>
+            <% @plans = Plano.find(:all, :order=>'ordem').map { |u| ["#{u.nome} - R$ #{u.valor.reais}", u.id] } %>
+            <%= f.select :plano, @plans %>
+          </p>
+       </div>
+
+      <p><%= submit_tag 'Prosseguir' %></p>
+
+    <% end -%>
+
+</div>

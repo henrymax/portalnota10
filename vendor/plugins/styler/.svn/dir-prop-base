@@ -1,0 +1,17 @@
+K 21
+piston:local-revision
+V 1
+2
+K 22
+piston:remote-revision
+V 2
+19
+K 11
+piston:root
+V 45
+http://the.railsi.st/svn/repo/plugins/styler/
+K 11
+piston:uuid
+V 36
+5930475e-1cf8-db11-bcc0-001372538e1f
+END

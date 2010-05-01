@@ -1,0 +1,13 @@
+--- 
+8-1: !map:HashWithIndifferentAccess 
+  moeda: BRL
+  ref_transacao: 8-1
+  commit: Efetuar pagamento!
+  item_quant_1: "1"
+  email_cobranca: user@example.com
+  item_peso_1: "0"
+  item_id_1: "1"
+  item_descr_1: Mensal - R$ 27,00
+  tipo: CP
+  item_frete_1: "0"
+  item_valor_1: "2700"
