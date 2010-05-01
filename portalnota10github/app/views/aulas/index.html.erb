@@ -1,0 +1,54 @@
+<div class="col1">
+
+  <div class="box classificacao">
+    <h3>Classificação</h3>
+    <ul>
+    <% @classificacao.each do |c| %>
+      <li><a href=""><%= c.nome %></a></li>
+    <% end  %>
+    </ul>
+
+    <div class="clear"></div>
+  </div>
+  <div class="box series">
+    <h3>Séries</h3>
+
+    <ul>
+    <% @series.each do |c| %>
+      <li><a href=""><%= c.nome %></a></li>
+    <% end  %>
+    </ul>
+
+    <div class="clear"></div>
+  </div>
+  <div class="box materias">
+    <h3>Matérias</h3>
+
+    <ul>
+    <% @materias.each do |c| %>
+      <li><a href=""><%= c.nome %></a></li>
+    <% end  %>
+    </ul>
+
+    <div class="clear"></div>
+  </div>
+
+
+</div>
+<div class="col2">
+
+    <% @aulas.each do |aula|  %>
+
+    <div class="aula">
+      <h3><%= link_to aula.titulo, "/aulas/#{aula.id}" %></h3>
+      <p><%= string_hint(aula.resumo, 200) %></p>
+    </div>
+    <% end %>
+
+
+    <div id="paginacao">
+      <%= will_paginate @aulas %>
+      <div class="clear"></div>
+    </div>
+
+</div>

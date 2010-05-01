@@ -1,0 +1,2 @@
+class PlanosController < ApplicationController
+end
